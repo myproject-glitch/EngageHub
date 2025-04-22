@@ -20,7 +20,7 @@ namespace API.Controllers
         {
             if (!result.IsSuccess && result.Code == 404)
                 return NotFound();
-            if (!result.IsSuccess && result.Value != null)
+            if (result.IsSuccess && result.Value != null)
                 return Ok(result.Value);
             return BadRequest(result.Error);
         }
