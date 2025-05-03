@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,22 @@ namespace Persistence
 {
     public class DbInitializer
     {
-        public static async Task SeedData(AppDbContext context)
+        public static async Task SeedData(AppDbContext context, UserManager<User> userManager)
         {
+            if(!userManager.Users.Any())
+            {
+                var users = new List<User>
+                {
+                    new() {DisplayName="Bob", UserName="eugene@best.com", Email="eugene@best.com"},
+                    new() {DisplayName="Kelly", UserName="kelly@best.com", Email="kelly@best.com"},
+                    new() {DisplayName="mary", UserName="mary@best.com", Email="mary@best.com"}
+                };
+
+                foreach(var user in users)
+                {
+                    await userManager.CreateAsync(user,"Pa$$w0rd");
+                }
+            }
             if(context.Activities.Any()) return;
 
             var activities = new List<Activity>
