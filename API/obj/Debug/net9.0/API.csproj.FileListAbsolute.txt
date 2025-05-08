@@ -163,3 +163,5 @@ C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\AutoMapper.dl
 C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\FluentValidation.dll
 C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Infrastructure.dll
+C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Infrastructure.pdb
