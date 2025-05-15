@@ -25,6 +25,9 @@ namespace Domain
         //navigational properties
 
         public ICollection<ActivityAttendee> Attendees { get; set; } = [];
+       
+
+
 
     }
 }

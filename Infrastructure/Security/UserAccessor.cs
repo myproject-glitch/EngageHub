@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Domain;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Persistence;
 using System;
 using System.Collections.Generic;
@@ -28,5 +29,14 @@ namespace Infrastructure.Security
                 ?? throw new Exception("Mo user found");
         }
 
+        async Task<User> IUserAccessor.GetUserWithPhotosAsync()
+        {
+            var userId = GetUserId();
+
+            return await DbContext.Users
+                .Include(x => x.Photos)
+                .FirstOrDefaultAsync(x => x.Id == userId)
+                 ?? throw new UnauthorizedAccessException("No user is logged in");
+        }
     }
 }

@@ -165,3 +165,5 @@ C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\FluentValidat
 C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Infrastructure.dll
 C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Infrastructure.pdb
+C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\CloudinaryDotNet.dll
+C:\Users\HP\Desktop\ActivityPlanner\EngageHub\API\bin\Debug\net9.0\Newtonsoft.Json.dll
