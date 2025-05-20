@@ -1,4 +1,5 @@
-﻿using Application.Profiles.Commands;
+﻿using Application.Activities.Commands;
+using Application.Profiles.Commands;
 using Application.Profiles.DTOs;
 using Application.Profiles.Queries;
 using CloudinaryDotNet.Actions;
@@ -14,7 +15,7 @@ namespace API.Controllers
         [HttpPost("add-photo")]
         public async Task<ActionResult<Photo>> AddPhoto(IFormFile file)
         {
-            return HandleResult(await Mediator.Send(new AddPhoto.Command { File = file}));
+            return HandleResult(await Mediator.Send(new AddPhoto.Command { File = file }));
         }
 
         [HttpGet("{userId}/photos")]
@@ -39,6 +40,12 @@ namespace API.Controllers
         public async Task<ActionResult<UserProfile>> GetProfile(string userId)
         {
             return HandleResult(await Mediator.Send(new GetProfile.Query { UserId = userId }));
+        }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateProfile(EditProfile.Command command)
+        {
+            return HandleResult(await Mediator.Send(command));
         }
     }
 }

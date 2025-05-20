@@ -400,6 +400,22 @@
   },
   {
     "ContainingType": "API.Controllers.ProfilesController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Profiles",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Activities.Commands.EditProfile\u002BCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ProfilesController",
     "Method": "DeletePhoto",
     "RelativePath": "api/Profiles/{photoId}/photos",
     "HttpMethod": "DELETE",
