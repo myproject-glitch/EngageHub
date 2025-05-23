@@ -1,4 +1,5 @@
 using API.Middleware;
+using API.SignalR;
 using Application.Activities.Queries;
 using Application.Activities.Validators;
 using Application.Core;
@@ -29,6 +30,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 });
 
 builder.Services.AddCors();
+builder.Services.AddSignalR();
 builder.Services.AddMediatR(x => {
     x.RegisterServicesFromAssemblyContaining<GetActivityList.Handler>();
     x.AddOpenBehavior(typeof(ValidationBehavior<,>));
@@ -71,8 +73,8 @@ app.UseAuthorization();
 
 
 app.MapControllers();
-app.MapGroup("api").MapIdentityApi<User>();
-
+app.MapGroup("api").MapIdentityApi<User>();// api/login
+app.MapHub<CommentHub>("/comments");
 using var scope = app.Services.CreateScope();
 
 var services = scope.ServiceProvider;
@@ -86,7 +88,7 @@ try
 }
 catch (Exception ex)
 {
-    var logger = services.GetRequiredService<ILogger>();
+    var logger = services.GetRequiredService<ILogger<Program>>();
     logger.LogError(ex, "An error occurred during migration.");
 }
 
