@@ -43,7 +43,7 @@ type ChatComment = {
     body: string
     userId: string
     displayName: string
-    imageUrl?:string
+    imageUrl?: string
 }
 
 

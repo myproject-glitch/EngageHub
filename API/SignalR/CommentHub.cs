@@ -1,4 +1,5 @@
-﻿using Application.Activities.Commands;
+﻿using System;
+using Application.Activities.Commands;
 using Application.Activities.Queries;
 using MediatR;
 using Microsoft.AspNetCore.SignalR;
@@ -13,7 +14,6 @@ namespace API.SignalR
 
             await Clients.Group(command.ActivityId).SendAsync("ReceiveComment", comment.Value);
         }
-
         public override async Task OnConnectedAsync()
         {
             var httpContext = Context.GetHttpContext();
