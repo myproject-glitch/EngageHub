@@ -6,7 +6,7 @@ import { Avatar, Box, Divider, ListItemIcon, ListItemText } from '@mui/material'
 import { useAccount } from '../../lib/hooks/useAccount';
 import { useState } from 'react';
 import { Add, Logout, Person } from '@mui/icons-material';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default function UserMenu() {
     const { currentUser, logoutUser } = useAccount();

@@ -4,7 +4,7 @@ import { LockOpen } from "@mui/icons-material";
 import TextInput from "../../app/shared/components/TextInput";
 import { useAccount } from "../../lib/hooks/useAccount";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link} from "react-router";
+import { Link } from "react-router-dom";
 import { RegisterSchema, registerSchema } from "../../lib/schemas/registerSchema";
 
 export default function RegisterForm() {

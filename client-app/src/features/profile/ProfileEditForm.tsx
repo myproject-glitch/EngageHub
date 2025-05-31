@@ -1,4 +1,4 @@
-﻿import { useParams } from "react-router";
+﻿import { useParams } from "react-router-dom";
 import { useProfile } from "../../lib/hooks/useProfile";
 import { useForm } from "react-hook-form";
 import { EditProfileSchema, editProfileSchema } from "../../lib/schemas/editProfileSchema";

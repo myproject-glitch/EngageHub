@@ -2,10 +2,10 @@
 import { SyntheticEvent, useState } from "react";
 import ProfilePhotos from "./ProfilePhotos";
 import ProfileAbout from "./ProfileAbout";
+import ProfileFollowings from "./ProfileFollowings";
 
 
 export default function ProfileContent() {
-
     const [value, setValue] = useState(0);
 
     const handleChange = (_: SyntheticEvent, newValue: number) => {
@@ -13,11 +13,11 @@ export default function ProfileContent() {
     }
 
     const tabContent = [
-        { label: 'About', content: <ProfileAbout/> },
+        { label: 'About', content: <ProfileAbout /> },
         { label: 'Photos', content: <ProfilePhotos /> },
-        {label:'Events',content:<div>Events</div>},
-        {label:'Followers',content:<div>Followers</div>},
-        {label:'Following',content:<div>Following</div>},
+        { label: 'Events', content: <div>Event</div>},
+        { label: 'Followers', content: <ProfileFollowings activeTab={value} /> },
+        { label: 'Following', content: <ProfileFollowings activeTab={value} /> },
     ]
 
     return (
@@ -27,19 +27,19 @@ export default function ProfileContent() {
             p={3}
             elevation={3}
             height={500}
-            sx={{ display: 'flex', alignItems: 'flex-start', borderRadius:3}}
+            sx={{ display: 'flex', alignItems: 'flex-start', borderRadius: 3 }}
         >
             <Tabs
                 orientation="vertical"
                 value={value}
                 onChange={handleChange}
-                sx={{ borderRadius: 1, height: 450, minWidth:200 }}
+                sx={{ borderRight: 1, height: 450, minWidth: 200 }}
             >
                 {tabContent.map((tab, index) => (
-                    <Tab key={index} label={tab.label} sx={{mr:3}}/>
+                    <Tab key={index} label={tab.label} sx={{ mr: 3 }} />
                 ))}
             </Tabs>
-            <Box sx={{ flexGrow: 1, p: 3, pt:0 }}>
+            <Box sx={{ flexGrow: 1, p: 3, pt: 0 }}>
                 {tabContent[value].content}
             </Box>
         </Box>

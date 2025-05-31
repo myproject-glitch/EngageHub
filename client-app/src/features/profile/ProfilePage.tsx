@@ -3,7 +3,7 @@ import ProfileHeader from "./ProfileHeader";
 import ProfileContent from "./ProfileContent"
 import { useProfile } from "../../lib/hooks/useProfile";
 import { Typography } from "@mui/material";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 
 export default function ProfilePage() {
     const { id } = useParams();
@@ -15,8 +15,8 @@ export default function ProfilePage() {
 
     return (
        <div>
-            <ProfileHeader profile={ profile} />
-        <ProfileContent/>
+            <ProfileHeader/>
+            <ProfileContent/>
         </div>
     )
 }

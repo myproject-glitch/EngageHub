@@ -1,4 +1,4 @@
-﻿import { useParams } from "react-router";
+﻿import { useParams } from "react-router-dom";
 import { useProfile } from "../../lib/hooks/useProfile";
 import { Box, Button, Divider, Typography } from "@mui/material";
 import { useState } from "react";

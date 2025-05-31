@@ -23,6 +23,9 @@ type Profile = {
     displayName: string
     bio?: string
     imageUrl?: string
+    followersCount?: number
+    followingCount?: number
+    following?: boolean
 }
 
 type Photo = {
@@ -34,7 +37,7 @@ type User = {
     id: string
     email: string
     displayName: string
-    imageUrl?:string
+    imageUrl?: string
 }
 
 type ChatComment = {

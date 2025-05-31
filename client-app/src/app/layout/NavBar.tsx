@@ -1,6 +1,6 @@
 ﻿import { Group} from "@mui/icons-material";
 import { Box, AppBar, Toolbar,Container, MenuItem, Typography, LinearProgress } from "@mui/material";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import MenuItemLink from "../shared/components/MenuItemLink";
 import { useStore } from "../../lib/hooks/useStore";
 import { Observer } from "mobx-react-lite";

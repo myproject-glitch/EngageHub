@@ -3,7 +3,7 @@ import { useActivities } from "../../../lib/hooks/useActivities";
 import ActivityDetailsHeader from "./ActivityDetailsHeader";
 import ActivityDetailsInfo from "./ActivityDetailsInfo";
 import ActivityDetailsChat from "./ActivityDetailsChat";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import ActivityDetailsSidebar from "./ActivityDetailsSidebar";
 
 

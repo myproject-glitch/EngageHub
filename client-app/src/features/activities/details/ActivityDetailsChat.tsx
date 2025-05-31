@@ -1,5 +1,5 @@
 ﻿import { Box, Typography, Card, CardContent, TextField, Avatar, CircularProgress } from "@mui/material";
-import { Link, useParams } from "react-router";
+import { Link, useParams } from "react-router-dom";
 import { useComments } from "../../../lib/hooks/useComments";
 import { timeAgo } from "../../../lib/util/util";
 import { FieldValues, useForm } from "react-hook-form";

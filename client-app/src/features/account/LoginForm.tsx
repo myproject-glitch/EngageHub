@@ -5,7 +5,7 @@ import { LockOpen } from "@mui/icons-material";
 import TextInput from "../../app/shared/components/TextInput";
 import { useAccount } from "../../lib/hooks/useAccount";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link, useLocation, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
     const { loginUser } = useAccount();

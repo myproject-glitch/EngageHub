@@ -474,6 +474,43 @@
   },
   {
     "ContainingType": "API.Controllers.ProfilesController",
+    "Method": "FollowToggle",
+    "RelativePath": "api/Profiles/{userId}/follow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ProfilesController",
+    "Method": "GetFollowings",
+    "RelativePath": "api/Profiles/{userId}/follow-list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "predicate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ProfilesController",
     "Method": "GetPhotosForUser",
     "RelativePath": "api/Profiles/{userId}/photos",
     "HttpMethod": "GET",

@@ -1,6 +1,6 @@
 ﻿import { AccessTime, Place } from "@mui/icons-material";
 import { Avatar, Box, Button, Card, CardContent, CardHeader, Chip, Divider, Typography } from "@mui/material"
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { formatDate } from "../../../lib/util/util";
 import AvatarPopover from "../../../app/shared/components/AvatarPopover";
 

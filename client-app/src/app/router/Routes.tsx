@@ -1,4 +1,4 @@
-﻿import { Navigate, createBrowserRouter } from "react-router";
+﻿import { Navigate, createBrowserRouter } from "react-router-dom";
 import App from "../layout/App";
 import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard";
 import ActivityForm from "../../features/activities/forms/ActivityForm";

@@ -15,9 +15,9 @@ namespace Persistence
         {
             var users = new List<User>
                 {
-                    new() {DisplayName="Bob", UserName="eugene@best.com", Email="eugene@best.com"},
-                    new() {DisplayName="Kelly", UserName="kelly@best.com", Email="kelly@best.com"},
-                    new() {DisplayName="mary", UserName="mary@best.com", Email="mary@best.com"}
+                    new() {Id="bod-id",DisplayName="Bob", UserName="eugene@best.com", Email="eugene@best.com"},
+                    new() {Id="kelly-id",DisplayName="Kelly", UserName="kelly@best.com", Email="kelly@best.com"},
+                    new() {Id="mary-id",DisplayName="mary", UserName="mary@best.com", Email="mary@best.com"}
                 };
             if (!userManager.Users.Any())
             {
