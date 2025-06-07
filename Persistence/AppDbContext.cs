@@ -13,7 +13,7 @@ namespace Persistence
     public class AppDbContext(DbContextOptions options) :  IdentityDbContext<User>(options)  
     {
         public required DbSet<Activity> Activities { get; set; }
-        public required DbSet<ActivityAttendee> activityAttendees { get; set; }
+        public required DbSet<ActivityAttendee> ActivityAttendees { get; set; }
         public required DbSet<Photo> Photos { get; set; }
         public required DbSet<Comment> Comments { get; set; }
         public required DbSet<UserFollowing> UserFollowings { get; set; }
