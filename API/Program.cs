@@ -70,11 +70,28 @@ app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 
 app.MapControllers();
+
+//app.Use(async (context, next) =>
+//{
+//    await next();
+//    if (context.Response.StatusCode == 404 &&
+//        !Path.HasExtension(context.Request.Path.Value) &&
+//        !context.Request.Path.Value.StartsWith("/api"))
+//    {
+//        context.Request.Path = "/index.html";
+//        context.Response.StatusCode = 200;
+//        await next();
+//    }
+//});
+
 app.MapGroup("api").MapIdentityApi<User>();// api/login
 app.MapHub<CommentHub>("/comments");
+app.MapFallbackToController("Index", "Fallback");
 using var scope = app.Services.CreateScope();
 
 var services = scope.ServiceProvider;

@@ -84,7 +84,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("activityAttendees");
+                    b.ToTable("ActivityAttendees");
                 });
 
             modelBuilder.Entity("Domain.Comment", b =>

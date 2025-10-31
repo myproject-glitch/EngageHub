@@ -1,4 +1,4 @@
-﻿import axios from "axios";
+﻿import axios from "axios"
 import { store } from "../stores/store";
 import { toast } from "react-toastify";
 import { router } from "../../app/router/Routes";
@@ -22,11 +22,14 @@ agent.interceptors.request.use(config => {
 
 agent.interceptors.response.use(
     async response => {
+
+        if (import.meta.env.DEV) 
     await sleep(1000);
     store.uiStore.isIdle()
     return response;
     },
     async error => {
+        if (import.meta.env.DEV) 
         await sleep(1000);
         store.uiStore.isIdle();
         const { status, data } = error.response;

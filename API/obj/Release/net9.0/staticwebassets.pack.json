@@ -1,0 +1,269 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\index-BApGRm6j.css",
+      "PackagePath": "staticwebassets\\assets\\index-BApGRm6j.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\index-De7xBoPZ.js",
+      "PackagePath": "staticwebassets\\assets\\index-De7xBoPZ.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-DJfICpyc.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-300-normal-DJfICpyc.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-300-normal-Dg7J0kAT.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-300-normal-Dg7J0kAT.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-BiRJyiea.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-400-normal-BiRJyiea.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-400-normal-JN0iKxGs.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-400-normal-JN0iKxGs.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-YnJLGrUm.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-500-normal-YnJLGrUm.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-500-normal-_hamcpv8.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-500-normal-_hamcpv8.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-BJaAVvFw.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-700-normal-BJaAVvFw.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-700-normal-jruQITdB.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-700-normal-jruQITdB.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-BLLmCegk.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-300-normal-BLLmCegk.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-300-normal-Chhwl1Jq.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-300-normal-Chhwl1Jq.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-D76n7Daw.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-400-normal-D76n7Daw.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-400-normal-b0JluIOJ.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-400-normal-b0JluIOJ.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-37WQE4S0.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-500-normal-37WQE4S0.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-500-normal-BJvL3D7h.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-500-normal-BJvL3D7h.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-CyZgh00P.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-700-normal-CyZgh00P.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-cyrillic-ext-700-normal-DXzexxfu.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-cyrillic-ext-700-normal-DXzexxfu.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-300-normal-Bx8edVml.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-300-normal-Bx8edVml.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-300-normal-D3gN5oZ1.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-300-normal-D3gN5oZ1.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-400-normal-IIc_WWwF.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-400-normal-IIc_WWwF.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-400-normal-LPh2sqOm.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-400-normal-LPh2sqOm.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-500-normal-Bg8BLohm.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-500-normal-Bg8BLohm.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-500-normal-CdRewbqV.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-500-normal-CdRewbqV.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-700-normal-1IZ-NEfb.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-700-normal-1IZ-NEfb.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-greek-700-normal-Bs05n1ZH.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-greek-700-normal-Bs05n1ZH.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-300-normal-BZ6gvbSO.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-300-normal-BZ6gvbSO.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-300-normal-BizgZZ3y.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-300-normal-BizgZZ3y.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-400-normal-BVyCgWwA.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-400-normal-BVyCgWwA.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-400-normal-DXyFPIdK.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-400-normal-DXyFPIdK.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-500-normal-C6iW8rdg.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-500-normal-C6iW8rdg.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-500-normal-rpP1_v3s.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-500-normal-rpP1_v3s.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-700-normal-BWcFiwQV.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-700-normal-BWcFiwQV.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-700-normal-CbYYDfWS.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-700-normal-CbYYDfWS.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-BzRVPTS2.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-300-normal-BzRVPTS2.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-300-normal-Djx841zm.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-300-normal-Djx841zm.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-BSFkPfbf.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-400-normal-BSFkPfbf.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-400-normal-DgXbz5gU.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-400-normal-DgXbz5gU.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-DvHxAkTn.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-500-normal-DvHxAkTn.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-500-normal-OQJhyaXd.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-500-normal-OQJhyaXd.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-Ba-CAIIA.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-700-normal-Ba-CAIIA.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-latin-ext-700-normal-DchBbzVz.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-latin-ext-700-normal-DchBbzVz.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-CAomnZLO.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-300-normal-CAomnZLO.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-300-normal-PZa9KE_J.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-300-normal-PZa9KE_J.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-D5pJwT9g.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-400-normal-D5pJwT9g.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-400-normal-DhTUfTw_.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-400-normal-DhTUfTw_.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-LvuCHq7y.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-500-normal-LvuCHq7y.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-500-normal-p0V0BAAE.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-500-normal-p0V0BAAE.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-B4Nagvlm.woff",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-700-normal-B4Nagvlm.woff"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\assets\\roboto-vietnamese-700-normal-CBbheh0s.woff2",
+      "PackagePath": "staticwebassets\\assets\\roboto-vietnamese-700-normal-CBbheh0s.woff2"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\categoryImages\\culture.jpg",
+      "PackagePath": "staticwebassets\\images\\categoryImages\\culture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\categoryImages\\drinks.jpg",
+      "PackagePath": "staticwebassets\\images\\categoryImages\\drinks.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\categoryImages\\film.jpg",
+      "PackagePath": "staticwebassets\\images\\categoryImages\\film.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\categoryImages\\food.jpg",
+      "PackagePath": "staticwebassets\\images\\categoryImages\\food.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\categoryImages\\music.jpg",
+      "PackagePath": "staticwebassets\\images\\categoryImages\\music.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\categoryImages\\travel.jpg",
+      "PackagePath": "staticwebassets\\images\\categoryImages\\travel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\placeholder.png",
+      "PackagePath": "staticwebassets\\images\\placeholder.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\images\\user.png",
+      "PackagePath": "staticwebassets\\images\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\ActivityPlanner\\EngageHub\\API\\wwwroot\\vite.svg",
+      "PackagePath": "staticwebassets\\vite.svg"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
