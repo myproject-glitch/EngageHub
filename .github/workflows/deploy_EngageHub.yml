@@ -1,4 +1,4 @@
-name: Build and deploy ASP.Net Core app to Azure Web App - EngageHub
+name: Build and deploy ASP.NET Core app to Azure Web App - EngageHub
 
 on:
   push:
@@ -10,9 +10,10 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Set up .NET
+      - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
@@ -20,13 +21,13 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Build with dotnet
+      - name: Build project
         run: dotnet build --configuration Release --no-restore
 
-      - name: Publish with dotnet
+      - name: Publish project
         run: dotnet publish -c Release -o publish_output
 
-      - name: Upload artifact for deployment job
+      - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
         with:
           name: app
@@ -36,7 +37,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     permissions:
-      id-token: write   # 👈 REQUIRED for Azure OIDC login
+      id-token: write
       contents: read
 
     steps:
@@ -46,7 +47,7 @@ jobs:
           name: app
           path: app
 
-      - name: Azure Login
+      - name: Azure Login via Federated Credentials
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
