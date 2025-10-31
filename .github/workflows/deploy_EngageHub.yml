@@ -35,6 +35,10 @@ jobs:
   deploy:
     runs-on: windows-latest
     needs: build
+    permissions:
+      id-token: write   # 👈 REQUIRED for Azure OIDC login
+      contents: read
+
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v4
