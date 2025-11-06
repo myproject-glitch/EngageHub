@@ -6,6 +6,7 @@ using Application.Core;
 using Application.Interfaces;
 using Domain;
 using FluentValidation;
+using Infrastructure.Email;
 using Infrastructure.Photos;
 using Infrastructure.Security;
 using Microsoft.AspNetCore.Authorization;
@@ -13,6 +14,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
+using Resend;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +38,19 @@ builder.Services.AddMediatR(x => {
     x.AddOpenBehavior(typeof(ValidationBehavior<,>));
 });
 
+builder.Services.AddHttpClient<ResendClient>();
+
+builder.Services.Configure<ResendClientOptions>(opt =>
+{
+    opt.ApiToken = builder.Configuration["Resend:ApiToken"]!;
+});
+
+// use scoped lifetimes
+builder.Services.AddScoped<ResendClient>();
+builder.Services.AddScoped<IResend, ResendClient>();
+builder.Services.AddScoped<IEmailSender<User>, EmailSender>();
+
+
 builder.Services.AddScoped<IUserAccessor, UserAccessor>();
 builder.Services.AddScoped<IPhotoService, PhotoService>();
 builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
@@ -44,6 +59,7 @@ builder.Services.AddTransient<ExceptionMiddleware>();
 builder.Services.AddIdentityApiEndpoints<User>(opt =>
 {
     opt.User.RequireUniqueEmail = true;
+    opt.SignIn.RequireConfirmedEmail = true;
 })
  .AddRoles<IdentityRole>()
  .AddEntityFrameworkStores<AppDbContext>();
@@ -89,7 +105,7 @@ app.MapControllers();
 //    }
 //});
 
-app.MapGroup("api").MapIdentityApi<User>();// api/login
+
 app.MapHub<CommentHub>("/comments");
 app.MapFallbackToController("Index", "Fallback");
 using var scope = app.Services.CreateScope();
