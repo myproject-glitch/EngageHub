@@ -44,11 +44,8 @@ builder.Services.Configure<ResendClientOptions>(opt =>
 {
     opt.ApiToken = builder.Configuration["Resend:ApiToken"]!;
 });
-
-// use scoped lifetimes
-builder.Services.AddScoped<ResendClient>();
-builder.Services.AddScoped<IResend, ResendClient>();
-builder.Services.AddScoped<IEmailSender<User>, EmailSender>();
+builder.Services.AddTransient<IResend, ResendClient>();
+builder.Services.AddTransient<IEmailSender<User>, EmailSender>();
 
 
 builder.Services.AddScoped<IUserAccessor, UserAccessor>();
@@ -105,9 +102,13 @@ app.MapControllers();
 //    }
 //});
 
-
+app.MapControllers();
+app.MapGroup("api").MapIdentityApi<User>(); // api/login
 app.MapHub<CommentHub>("/comments");
 app.MapFallbackToController("Index", "Fallback");
+
+
+
 using var scope = app.Services.CreateScope();
 
 var services = scope.ServiceProvider;
