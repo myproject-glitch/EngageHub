@@ -1,72 +1,66 @@
-﻿import axios from "axios"
+﻿import axios from "axios";
 import { store } from "../stores/store";
 import { toast } from "react-toastify";
 import { router } from "../../app/router/Routes";
 
-const sleep = (delay: number) => {
-    return new Promise(resolve => {
-        setTimeout(resolve, delay)
-    });
-}
+const sleep = (delay: number) => new Promise(resolve => setTimeout(resolve, delay));
 
 const agent = axios.create({
     baseURL: import.meta.env.VITE_API_URL,
     withCredentials: true
 });
 
+// Request interceptor: show loading
 agent.interceptors.request.use(config => {
     store.uiStore.isBusy();
     return config;
-})
+});
 
-
+// Response interceptor: handle errors
 agent.interceptors.response.use(
     async response => {
-
-        if (import.meta.env.DEV) 
-    await sleep(1000);
-    store.uiStore.isIdle()
-    return response;
+        if (import.meta.env.DEV) await sleep(1000);
+        store.uiStore.isIdle();
+        return response;
     },
     async error => {
-        if (import.meta.env.DEV) 
-        await sleep(1000);
+        if (import.meta.env.DEV) await sleep(1000);
         store.uiStore.isIdle();
-        const { status, data } = error.response;
+
+        const { status, data } = error.response || {};
+
         switch (status) {
             case 400:
-                if (data.errors) {
-                    const modelStateErrors = [];
-
+                if (data?.errors) {
+                    const modelStateErrors: string[] = [];
                     for (const key in data.errors) {
-                        if (data.errors[key]) {
-                            modelStateErrors.push(data.errors[key]);
-                        }
+                        if (data.errors[key]) modelStateErrors.push(data.errors[key]);
                     }
                     throw modelStateErrors.flat();
                 } else {
                     toast.error(data);
                 }
                 break;
+
             case 401:
-                if (data.detail == 'NotAllowed') {
-                    toast.error('unauthorised');
-                }
-                else {
-                    toast.error('Unauthorised');
+                if (data?.detail === 'NotAllowed') {
+                    throw new Error(data.detail); 
+                } else {
+                    toast.error('Unauthorized');
                 }
                 break;
+
             case 404:
-                router.navigate('/not-found',);
+                router.navigate('/not-found');
                 break;
+
             case 500:
                 router.navigate('/server-error', { state: { error: data } });
                 break;
-            default:
         }
+
         return Promise.reject(error);
     }
 );
-
 
 export default agent;

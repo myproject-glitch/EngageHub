@@ -7,13 +7,13 @@ import { useAccount } from "../../lib/hooks/useAccount";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function LoginForm() {
     const [notVerified, setNotVerified] = useState(false);
     const { loginUser, resendConfirmationEmail } = useAccount();
     const navigate = useNavigate();
     const location = useLocation();
-
 
     const { control, handleSubmit, watch,formState: { isValid, isSubmitting } } = useForm<LoginSchema>({
         mode: 'onTouched',
@@ -23,8 +23,14 @@ export default function LoginForm() {
     const email = watch('email');
 
     const handleResendEmail = async () => {
-        await resendConfirmationEmail.mutateAsync(email)
-        setNotVerified(false);
+        try {
+            await resendConfirmationEmail.mutateAsync({ email })
+            setNotVerified(false);
+        }
+        catch (error) {
+            console.log(error);
+            toast.error('Problem sending email - please check email address');          
+        }
     }
 
     const onSubmit = async (data: LoginSchema) => {
@@ -38,9 +44,7 @@ export default function LoginForm() {
                 }
             }
         });
-
     }
-
     return (
         <Paper component='form'
             onSubmit={handleSubmit(onSubmit)}
@@ -66,25 +70,22 @@ export default function LoginForm() {
                 disabled={!isValid || isSubmitting}
                 variant="contained"
                 size="large"
-
             >
                 Login
             </Button>
             {notVerified ? (
                 <Box display='flex' flexDirection='column' justifyContent='center'>
                     <Typography textAlign='center' color='error'>
-                        Your EMail has not been verified. You can click the buttton to re-send the verification email
+                        Your email has not been verified.
+                        You can click the buttton to re-send the verification email
                     </Typography>
                     <Button
                         disabled={resendConfirmationEmail.isPending}
-                        onClick={handleResendEmail}
-                        
-                        
+                        onClick={handleResendEmail}                                                
                     >
                         Re-send email link
                     </Button>
                 </Box>
-
             ) : (
                 <Typography sx={{ textAlign: 'center' }}>
                     Don't have an account?
@@ -92,9 +93,7 @@ export default function LoginForm() {
                         Sign up
                     </Typography>
                 </Typography>
-
             )}
-
         </Paper>
     )
 }

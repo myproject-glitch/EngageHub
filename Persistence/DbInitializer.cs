@@ -15,7 +15,7 @@ namespace Persistence
         {
             var users = new List<User>
                 {
-                    new() {Id="bod-id",DisplayName="Bob", UserName="eugene@best.com", Email="eugene@best.com"},
+                    new() {Id="bod-id",DisplayName="Bob", UserName="eugene@gmail.com", Email="eugene@best.com"},
                     new() {Id="kelly-id",DisplayName="Kelly", UserName="kelly@best.com", Email="kelly@best.com"},
                     new() {Id="mary-id",DisplayName="mary", UserName="mary@best.com", Email="mary@best.com"}
                 };
